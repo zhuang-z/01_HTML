@@ -1,0 +1,22 @@
+body {
+	background-image:url("img/bc.png");
+}
+h1 {
+	text-align:center;
+	color:white;
+}
+h2 {
+	margin-left:60%;
+	color:white;
+}
+p {
+	color:white;
+	text-indent:32px;
+	font-size:16px;
+	line-height:32px;
+}
+img {
+	position:absolute;
+	left:50%;
+	margin-left:-181px;
+}
