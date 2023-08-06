@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C-手绘蝴蝶</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 小蝴蝶的样式 -->
+    <style type="text/css">
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-perspective-origin: 50% 50%;
+        perspective-origin: 50% 50%;
+        -webkit-perspective: 800px;
+        perspective: 800px;
+    }
+
+    .butterfly {
+        -webkit-animation: hover 250ms cubic-bezier(0.48, 0.01, 0.54, 1) infinite;
+        animation: hover 250ms cubic-bezier(0.48, 0.01, 0.54, 1) infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        -webkit-animation-fill-mode: reverse;
+        animation-fill-mode: reverse;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: rotateX(50deg) rotateY(20deg) rotateZ(-50deg) translateY(0px);
+        transform: rotateX(50deg) rotateY(20deg) rotateZ(-50deg) translateY(0px);
+        width: 30px;
+    }
+    .butterfly::before {
+        background: #362c13;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 110px;
+        left: 50%;
+        margin-left: -10px;
+        outline: 1px solid transparent;
+        position: absolute;
+        top: -15px;
+        -webkit-transform: rotatey(100deg);
+        transform: rotatey(100deg);
+        width: 20px;
+        z-index: 2;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="butterfly">
+        <div class="wing">
+            <div class="bit"></div>
+            <div class="bit"></div>
+        </div>
+        <div class="wing">
+            <div class="bit"></div>
+            <div class="bit"></div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+	
+	<!--
+    <script type="text/javascript"> 
+        window.onload = function()
+        { 
+            alert("我是干扰代码，知道怎么把我注释掉吗？"); 
+        }; 
+    </script>
+	-->
+</body>
+</html>

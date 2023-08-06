@@ -1,0 +1,48 @@
+/*
+* --> 要求 <--
+* A. 在fishc.js中找到并完成该需求
+* B. 在fishc.js中找到并完成该需求
+* C. 将字体设置为鱼C元气绿
+*/
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+
+body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    position: relative;
+}
+
+#wrapper {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+#words {
+    pointer-events: none;
+    font-family: 'Calligraffitti', cursive;
+    position: absolute;
+    width: 100%;
+    padding: 200px 0 0 0;
+    font-size:33px;
+    color: white;
+    text-align: center;
+}
+
+#words p {
+    display: none;
+}
+
+#words p#w1 {
+    display: block;
+}
+
+#words p span {
+    display: block;
+    font-size: 1.4em;
+	color:#2ebb96;
+    /* 此处为字体设置鱼C元气绿：#2ebb96 */
+}
