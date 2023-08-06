@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>文档定义内嵌脚本</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta name="keywords" content="HTML,CSS">
+		<meta name="description" content="学习HTML+CSS+Javascript">
+		<meta name="author" content=xiaoyouzi"">
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		
+		
+		<script type="text/javascript" src="patch.js" defer></script>
+		<!-- 放在这里链接不成功是因为浏览器按顺序解析语句，
+		解析到script语句之后去读取脚本，执行脚本之后再解析下面的语句，加个defer属性即可 
+		defer属性只能用于解析外部脚本，延迟执行脚本
+		async:异步执行脚本，浏览器对HTML的解析和对脚本的获取是异步执行的，不会互相影响，
+		获取完脚本之后就直接执行，对于不依赖其他文件和本身没有任何依赖关系的文件可以使用async属性，
+		不在乎执行的先后顺序
+		-->
+	</head>
+		
+	
+	<body>
+		<h1>小游子HTML学习日记</h1>
+		<h2>小游子</h2>
+		<p>小游子到此一游~</p>
+		<p>上面的内容哪来的？</p>
+	</body>
+	
+</html>
