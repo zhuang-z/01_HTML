@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>c元素的使用</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+		<meta name="author" content="xiaoyouzi">
+	</head>
+	<body>
+		<!-- code元素的使用 -->
+		<pre>
+			<code>
+				&#60;p&#62;你最喜欢吃的水果是：&#60;span id=&#34;fruit&#34;&#62;&#60;/span&#62;&#60;/p&#62;
+				&#60;script type=&#34;text/javascript&#34;&#62;
+					var user_input = prompt(&#34;你最喜欢吃的水果是：&#34;);
+					document.getElementById(&#34;fruit&#34;).innerHTML=user_input;
+				&#60;/script&#62;
+			</code>
+		</pre>
+		<!-- var:定义变量，通常显示为斜体；
+			kbd:定义键盘文本，浏览器通常用等宽字体来显示该标签中包含的文本；
+			samp:定义程序输出文本，一般强调文本；
+		-->
+		<p>上面代码定义了一个变量<var>user_input</var>，用于接收用户的输入。</p>
+		<p>如果用户输入的是<kbd>香蕉</kbd>，那么程序将打印<samp>你最喜欢吃的水果是：香蕉</samp></p>
+	</body>
+</html>
