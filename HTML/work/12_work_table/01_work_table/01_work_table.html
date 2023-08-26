@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="小甲鱼,Web开发,HTML5,CSS3,Web编程教学">
+	<meta name="description" content="《零基础入门学习Web开发》课后作业">
+	<meta name="author" content="鱼C工作室">
+	<title>《零基础入门学习Web开发》课后作业</title>
+	<style type="text/css">
+        body {
+            font: normal 14px/21px Arial, serif;
+        }
+        
+        .example {
+            float: left;
+            width: 50%;
+        }
+        
+        table {
+            font-size: 1em;
+            border-collapse: collapse;
+        }
+        
+		/* 修改th和td的内边距为12px */
+        table, th, td {
+            border: 1px solid #999;
+            text-align: left;
+			padding:12px;
+        }
+
+		/* 修改th的背景色 */
+        th {
+            cursor: pointer;
+			background: #f4f4f4;
+        }
+        
+        th:hover,
+        th.sorted {
+            background: #d4d4d4;
+        }
+
+        th.no-sort,
+        th.no-sort:hover {
+            background: #f4f4f4;
+            cursor: not-allowed;
+        }
+
+        th.sorted.ascending:after {
+            content: "  \2191";
+        }
+
+        th.sorted.descending:after {
+            content: " \2193";
+        }
+
+        .disabled {
+            opacity: 0.5;
+        }
+	</style>
+</head>
+<body>
+    <div class="example ex-1">
+        <table>
+            <thead>
+                <tr>
+                    <th>编程语言</th>
+                    <th>出生日期</th>
+                    <th class="number">年龄</th>
+                    <th class="no-sort">照片</th>
+                </tr>
+            </thead>
+            <tbody>
+				<!-- 修改data-sort-value的顺序 ↑2009-1972 改成↑1972-2009 -->
+                <tr>
+                    <td>C</td>
+                    <td data-sort-value="1">1972</td>
+                    <td>47</td>
+                    <td><img src="img/FishC.png" width="50"></td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td data-sort-value="3">1993</td>
+                    <td>26</td>
+					<!-- 只有移动到这个HTML的图片上面才会变灰，td写成了th，魔鬼藏在细节里面 -->
+                    <th><img src="img/FishC.png" width="50"></th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td data-sort-value="4">1995</td>
+                    <td>24</td>
+                    <td><img src="img/FishC.png" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td data-sort-value="2">1989</td>
+                    <td>30</td>
+                    <td><img src="img/FishC.png" width="50"></td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td data-sort-value="4">1995</td>
+                    <td>24</td>
+                    <td><img src="img/FishC.png" width="50"></td>
+                </tr>
+                <tr>
+                    <td>GO</td>
+                    <td data-sort-value="5">2009</td>
+                    <td>10</td>
+                    <td><img src="img/FishC.png" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.tablesort.min.js"></script>
+    <script src="js/fishc.js"></script>
+</body>
+</html>

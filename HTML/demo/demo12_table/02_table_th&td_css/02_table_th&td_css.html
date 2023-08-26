@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table th td css元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+	<!-- 给表格添加CSS样式 -->
+	<style>
+		table{
+			border: 1px solid black;   /* solid 定义实线边框*/
+			border-collapse: collapse; /* 表格的边框被合并为一个单一的边框*/
+		}
+		th{
+			border: 1px solid red;
+		}
+		td{
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<!-- 表格的表头使用 <th> 标签进行定义。 -->
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>座右铭</th>
+		</tr>
+		<tr>
+			<td>张三</td>
+			<td>18</td>
+			<td>干就完事了！</td>
+		</tr>
+		
+		<tr>
+			<td>李四</td>
+			<td>22</td>
+			<td>勇敢和疯狂的人先享受世界！</td>
+		</tr>
+		
+	</table>
+	
+</body>
+</html>
