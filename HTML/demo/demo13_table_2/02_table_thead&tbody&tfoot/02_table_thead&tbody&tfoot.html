@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>复仇者联盟主要成员技能表</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+	
+	<style>
+		table{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+		/* 将 thead 元素中的 th 元素的背景色设置为 grey */
+		/* 将 tbody 元素中的 th 元素的背景色设置为 lightgrey */
+		thead th{
+			background: grey;
+			color:white;
+		}
+		tbody th{
+			background: lightgrey;
+			color:white;
+		}
+		th,td{
+			border:1px solid black;
+			padding:5px;
+		}
+	</style>	
+	
+</head>
+<body>
+	<table>
+		<caption>复仇者联盟主要成员技能表</caption>
+		<!-- 添加 thead 和 tbody 元素，更细致的规划表格-->
+		<thead>
+			<tr>
+			    <th>外号</th>
+			    <th>原名</th>
+			    <th>特长</th>
+			    <th>照片</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+			    <th>美国队长</th>
+			    <td>史蒂芬·罗杰斯</td>
+			    <td>强化体格</td>
+			    <td><img src="img/CaptainAmerica.jpg" alt="美国队长" width="300"></td>
+			</tr>
+			<tr>
+			    <th>钢铁侠</th>
+			    <td>托尼·斯塔克</td>
+			    <td>有钱</td>
+			    <td><img src="img/IronMan.jpg" alt="钢铁侠" width="300"></td>
+			</tr>
+			<tr>
+			    <th>雷神</th>
+			    <td>托尔</td>
+			    <td>操控雷电</td>
+			    <td><img src="img/Thor.jpg" alt="雷神" width="300"></td>
+			</tr>
+			<tr>
+			    <th>绿巨人</th>
+			    <td>布鲁斯·班纳</td>
+			    <td>变大变强</td>
+			    <td><img src="img/Hulk.jpg" alt="绿巨人" width="300"></td>
+			</tr>
+			<tr>
+			    <th>黑寡妇</th>
+			    <td>娜塔莎·罗曼诺夫</td>
+			    <td>性感</td>
+			    <td><img src="img/BlackWidow.jpg" alt="黑寡妇" width="300"></td>
+			</tr>
+		</tbody>
+		<!-- 添加tfoot元素 表尾 -->
+		<tfoot>
+			<tr>
+				<!-- colspan元素 将列合并  rowspan 将行合并-->
+				<td colspan="4">上述表格内容仅供娱乐，非官方资料！</td>
+			</tr>
+		</tfoot>
+		
+	</table>
+	
+</body>
+</html>
