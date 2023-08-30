@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form表单的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- action属性：action 属性定义在提交表单时执行的动作。规定当提交表单时向何处发送表单数据。
+		向服务器提交表单的通常做法是使用提交按钮。
+		通常，表单会被提交到 web 服务器上的网页。 如果忽略此属性的话会由当前页面进行操作。
+		
+		method属性：值get、post	规定用于发送 form-data 的 HTTP 方法。
+		
+		input：标签用于搜集用户信息。用户输入
+		type属性：button、checkbox、color、date、datetime-local、email、
+		file、hidden、image、month、number、password、radio、range、reset、
+		search、submit、tel、text、time、url、week	规定 input 元素的类型
+		
+		name属性：field_name	指定元素的名称，用于在 JavaScript 中引用元素，
+		或者在表单提交后引用表单数据，
+		只有设置了 name 属性的表单才能在提交表单时传递该值
+		
+		button元素type	button、reset、submit	指定按钮的类型。
+		
+		formmethod	get、post	指定表单提交的方法
+		（只能作用于具有提交性质的按钮，比如 type="submit" 或 type="image"）
+		-->
+	<form action="welcome.php" method="post">
+		名字：<input type="text" name="name"><br><br>
+		邮箱：<input type="text" name="email"><br><br>
+		<button type="subimit">提交</button>
+	</form>
+	
+</body>
+</html>
