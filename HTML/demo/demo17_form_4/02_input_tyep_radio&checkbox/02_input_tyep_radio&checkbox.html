@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>type radio&checkbox单选框和复选框的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="post">
+		<!-- input type radio单选框的使用 -->
+		<label>性别：<input type="radio" name="sex" value="male">男</label>
+		<label><input type="radio" name="sex" value="female">女</label>
+		<br><br>
+		
+		<p>你最喜欢的漫威英雄是哪个？</p>
+		<!-- 使用单选框 name的值必须一致 如果不一致，选项都能够被选中-->
+		
+		<label><input type="checkbox" name="hero" value="Deadpool">死侍</label>
+		<label><input type="checkbox" name="hero" value="Venom">毒液</label>
+		<label><input type="checkbox" name="hero" value="BlackWidow">黑寡妇</label>
+		<label><input type="checkbox" name="hero" value="Hulk">绿巨人</label>
+		<label><input type="checkbox" name="hero" value="GreenTurtle">小甲鱼</label>
+		<label><input type="checkbox" name="hero" value="IronMan">钢铁侠</label>
+		
+		<br><br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>

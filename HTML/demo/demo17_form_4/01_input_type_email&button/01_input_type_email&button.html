@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>type email&button的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- input type主要一些输入属性
+		password：密码字段，做掩码处理 <input type="password" name="psw">
+		submit：也可定义表单提交的按钮，与button类似  <input type="submit" value="Submit">
+		value：获取输入框的默认值 <input type="text" name="firstname" value="Mickey">
+		radio：单选框 <input type="radio" name="sex" value="male" checked>Male<br> <input type="radio" name="sex" value="female">Female
+		checkbox：复选框 <input type="checkbox" name="vehicle" value="Bike">I have a bike
+		button：定义按钮，要加触发事件<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+		number：数字值的范围 <input type="number" name="quantity" min="1" max="5" setp="2">,step间隔
+		date：日期输入字段 <input type="date" name="bday" min="1979-12-31" max=2000-01-02""><br>
+		color:颜色 <input type="color" name="favcolor">
+		reset,range,month,week,time,datatime,datatime-local,email,search,tel,url
+		
+	 -->
+	 
+	 <form action="welcome.php" method="post">
+		 <!-- input type类型 -->
+		 <label>名字：<input type="text" name="name"></label><br><br>
+		 <label>邮箱：<input type="email" name="email"></label><br><br>
+		 
+		 <!-- input改写三个button -->
+		 <input type="submit" value="提交">  <!-- value是按钮上的值-->
+		 <input type="reset" value="重置">
+		 <input type="button" onclick=msg() value="点我">  <!-- msg是点击之后触发的事件 也可以写成 onclick="alert('Hello World!')"-->
+		 
+	 </form>
+	
+	<script>
+		function msg(){
+			alert("Hello Wrold！")
+		}
+	</script>
+	
+</body>
+</html>
