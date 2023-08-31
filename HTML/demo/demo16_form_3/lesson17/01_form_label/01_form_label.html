@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>label元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="post">
+		<!-- 使用label将文本包裹起来 
+		
+		当你使用鼠标点击文本 “你叫什么名字：” 的时候，光标就会自动聚焦到它后面对应的 input 元素中。
+		这种没有说白，但实际上又有联系的包裹体验，叫做隐式关联。
+		
+		顺便提一下，还有一种叫做显式关联。
+		
+		label 元素里面有一个 for 属性，使用它的值来指定另一个元素的 id 属性值，
+		因而产生的关联叫显式关联。
+		
+		-->
+		<label>你叫什么名字：<input type="text" name="name"></label><br><br>
+		<label>你是不是基佬：<input type="text" name="gay"></label><br><br>
+		<label for="from">你来自哪里：<input type="text" name="from"></label><br><br>
+		<label for="to">你要去哪里：<input type="text" name="to"></label><br><br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>
