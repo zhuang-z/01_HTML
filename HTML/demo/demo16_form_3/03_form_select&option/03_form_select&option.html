@@ -12,9 +12,9 @@
 	<!-- select 和 option元素制作下拉框 -->
 	<fieldset>
 		<legend>基本信息</legend>
-		<label for="name">姓名：<input type="text" name="name"></label><br><br>
-		<label for="age">年龄：<input type="text" name="age"></label><br><br>
-		<label for="sex">
+		<label for="name">姓名：<input id="name" type="text" name="name"></label><br><br>
+		<label for="age">年龄：<input id="age" type="text" name="age"></label><br><br>
+		<label>
 			性别：
 			<select name="sex">
 					<option value="male">男</option>
@@ -25,13 +25,13 @@
 	<p>为了给您提供更好的服务，希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视每位用户的宝贵意见，期待您的参与！现在我们就马上开始吧！</p>
 	<fieldset>
 		<legend>调查问卷</legend>
-		<label for="community">
+		<label for="community1">
 			你是否知道鱼C论坛:
-			<input type="radio" name="community1">是
-			<input type="radio" name="community2">否
+			<input id="community1" type="radio" name="community1">是
+			<input id="community2" type="radio" name="community2">否
 		</label>
 		<br><br>
-		<label for="num">
+		<label>
 			你使用鱼C论坛的频率：
 			<select name="num">
 				<option value="num1">一周一次</option>
@@ -41,7 +41,7 @@
 			</select>
 		</label>
 		<br><br>
-		<label for="satisfaction">
+		<label>
 			你觉得鱼C论坛如何：
 			<select name="satisfaction">
 				<option value="sat">非常满意</option>
