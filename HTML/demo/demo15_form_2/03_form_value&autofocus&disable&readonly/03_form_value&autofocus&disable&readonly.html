@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form target的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<h1>小鱼儿富人妇科医院调查问卷</h1>
+	<form action="welcome.php" method="post">
+		<!-- 当一个输入框十有八九是同样内容的时候，我们就去可以设置它的默认值，
+		这样用户也不会觉得你很烦了。
+		给 input 元素的 value 属性指定一个值，那么这个就是输入框的默认值啦 -->
+		性别：<input type="text" name="sex" value="女" disabled><br><br> <!-- disable 禁用输入框，表单提交的时候也不会提交上去-->
+		名字：<input type="text" name="name" autofocus><br><br>
+		年龄：<input type="text" name="age" value="18" readonly><br><br> <!-- readonly 指此输入框只能读不能修改且会随表单一起提交-->
+		
+		<!-- input type主要一些输入属性 
+			password：密码字段，做掩码处理 <input type="password" name="psw">
+			submit：也可定义表单提交的按钮，与button类似  <input type="submit" value="Submit">
+			value：获取输入框的默认值 <input type="text" name="firstname" value="Mickey">
+			radio：单选框 <input type="radio" name="sex" value="male" checked>Male<br> <input type="radio" name="sex" value="female">Female
+			checkbox：复选框 <input type="checkbox" name="vehicle" value="Bike">I have a bike
+			button：定义按钮，要加触发事件<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+			number：数字值的范围 <input type="number" name="quantity" min="1" max="5" setp="2">,step间隔
+			date：日期输入字段 <input type="date" name="bday" min="1979-12-31" max=2000-01-02""><br>
+			color:颜色 <input type="color" name="favcolor">
+			reset,range,month,week,time,datatime,datatime-local,email,search,tel,url
+			
+		 -->
+		……<br><br>
+		……<br><br>
+		……<br><br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>autocomplete的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- 拒绝浏览器自动填充表单  form里面设置autocomplete值为off即可，默认为on打开
+		input里面也可以设置autocomplete属性且优先级比form的要高
+	-->
+	<form action="welcome.php" method="post" autocomplete="off">
+		你叫什么名字：<input type="text" name="name"><br><br>
+		你是不是基佬：<input type="text" name="gay"><br><br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>
