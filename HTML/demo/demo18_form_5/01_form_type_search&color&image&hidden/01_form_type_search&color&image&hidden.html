@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>type search&color&image&hidden的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="post">
+		<!-- input实现搜索框样式 -->
+		<label>你想去哪里旅行：<input type="search" name="search"></label>
+		<br><br>
+		<!-- input实现选择颜色 -->
+		<label>你最喜欢的颜色：<input type="color" name="color"/></label>
+		<br><br>
+		<!-- input实现图像选择 -->
+		<label>别看我只是一只龟，我还是一个按钮：<input type="image" src="turtle.png" alt="green turtle"/></label>
+		<br><br>
+		<!-- 隐藏input元素 -->
+		<label>要你何用按钮：<input type="hidden" name="hidden" value="你看不到我" disabled></label>
+		<br><br>
+		<input type="submit" value="提交">
+	</form>
+	
+</body>
+</html>

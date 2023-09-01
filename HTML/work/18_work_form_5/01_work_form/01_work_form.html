@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="鱼C工作室|免费编程视频教学|Python教学|Web开发教学|全栈开发教学|C语言教学|汇编教学|Win32开发|加密与解密|Linux教学">
+    <meta name="description" content="鱼C工作室为大家提供最有趣的编程视频教学。">
+    <meta name="author" content="鱼C工作室">
+    <title>鱼C-搜索</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-search.css" media="screen" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        function search() {
+            window.open("http://www.baidu.com/s?wd=" + $("#input").val());
+        }
+        document.onkeydown = function(event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 13) {
+                search();
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas>
+    
+    <p id="offscreen-text" class="offscreen-text"></p>
+    <p id="text" class="text"></p>
+
+    <div id="d" class="webdesigntuts-workshop"> 
+        <span>
+            <input class="input" id="input" placeholder="请鱼油输入想要的搜索内容" autofocus="autofocus"/>
+            <button onclick="search();">百度一下</button>
+        </span>
+    </div>
+	<!-- 添加js脚本 -->
+	<script src="js/tMax.js"></script>
+	<script src="js/word.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
