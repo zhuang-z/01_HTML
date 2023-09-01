@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input实现文件上传</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<!-- 
+		1.input type="file"实现文件上传 相应的需要把表单的enctype属性改掉
+		默认情况下，enctype 属性被设置为 "application/x-www-form-urlencoded"，它会对所有的字符进行编码，
+		并不适用于文件传输。文件传输需要将该属性设置为 "multipart/form-data"
+		
+		2.限定上传文件的属类型
+		input 有一个accep属性，表示可以选择的文件类型，多个类型之间使用英文的逗号隔开；
+		accep=".jpg,.html,.avi"，除此之外，还可以用MIME类型来描述 audio/* image/*
+		注意：accept 属性只是起到 “建议” 的作用，并不能强制限制用户的文件上传类型。限制文件类型还是需要使用 JavaScript 或通过后端的 PHP 来实现
+		
+		3.限定上传文件的尺寸
+		隐藏技能：通过在上传文件这个 input 元素前面，追加一个 name 为 MAX_FILE_SIZE 的隐藏字段，value 指定允许上传的文件尺寸，单位是字节
+		
+		4.上传多个文件
+		只需要在 input 元素里面添加一个 multiple 属性即可
+		-->
+		<input type="hidden" name="MAX_FILE_SIZE" value="1024">
+		<label>请您选择要上传的文件：<input type="file" name="file" accept=".mp3" multiple></label>
+		<br><br>
+		<input type="submit" value="提交"/>
+	</form>
+	
+</body>
+</html>
