@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input number的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- input number限制输入类型为数字 
+	min 指定的是可接受最小的值，max 指定的是可接受最大的值，step 则是指定每次调整的幅度。
+	-->
+	<form action="welcome.php" method="post" enctype="multipart-form-data">
+		<label>菇凉，芳龄几何：<input type="number" name="age" min="1" max="99" step="5"/></label>
+		<br><br>
+		<input type="submit" value="提交"/>
+	</form>
+	
+</body>
+</html>

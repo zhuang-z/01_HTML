@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="小甲鱼,Web开发,HTML5,CSS3,Web编程教学">
+    <meta name="description" content="《零基础入门学习Web开发》">
+    <meta name="author" content="鱼C工作室">
+    <title>鱼C-中国身份证号码解析器</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/IDCardPaser.js"></script>
+    <script src="js/GB2260.js"></script>
+    <link rel="stylesheet" href="css/fishc.css">
+</head>
+
+<body>
+    <form role="form">
+        <h1>鱼C
+            <span>身份证验证器</span>
+        </h1>
+        <div class="form-group">
+            <label for="IDCardNumber">身份证号码：</label>
+            <input type="text" class="form-control" name="IDCardNumber" id="IDCardNumber" placeholder="请输入身份证号码">
+        </div>
+        <div class="form-group">
+            <label for="Address">所在地：</label>
+            <!-- 添加一个属性，使得下面这个 input 元素无法被修改 readonly属性-->
+            <input type="text" class="form-control" name="Address" id="Address" placeholder="所在地" readonly>
+        </div>
+        <div class="form-group">
+            <label for="BirthDate">出生日期：</label>
+            <!-- 添加一个属性，使得下面这个 input 元素无法被修改 readonly属性-->
+            <input type="text" class="form-control" name="BirthDate" id="BirthDate" placeholder="出生日期" readonly>
+        </div>
+        <div class="form-group">
+            <label for="Sex">性别：</label>
+            <!-- 添加一个属性，使得下面这个 input 元素无法被修改 readonly属性-->
+            <input type="text" class="form-control" name="Sex" id="Sex" placeholder="性别" readonly>
+        </div>
+    </form>
+</body>
+</html>

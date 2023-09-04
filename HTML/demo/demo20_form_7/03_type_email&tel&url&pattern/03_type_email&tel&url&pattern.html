@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="post" enctype="multipart/form-data">
+	    <!-- input获取邮箱、电话和网址  pattern属性匹配正则表达式-->
+	    <label>邮箱：<input type="email" name="email" pattern="\w[-\w.+]*@(163.com|126.com)"></label>
+	    <br><br>
+	    <label>电话：<input type="tel" name="tel" pattern="(\(\d{3,4}\)|\d{3,4}-|\s)?\d{8}"></label>
+	    <br><br>
+	    <label>网址：<input type="url" name="url" pattern="^((https|http)?:\/\/)[^\s]+"></label>
+	    <br><br>
+	    <input type="submit" value="提交">
+	</form>
+	
+</body>
+</html>

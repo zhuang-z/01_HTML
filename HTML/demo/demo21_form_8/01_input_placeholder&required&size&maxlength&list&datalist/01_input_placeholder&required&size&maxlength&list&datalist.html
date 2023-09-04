@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>placeholder&required&size&maxlength&list&datalist的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="post">
+	    <!-- placeholder在输入框中显示提示信息 
+			required属性指定输入框为必填 
+			size修改输入框的长度，字符为单位
+			maxlength提示用户输入的最大字符数
+			
+			list 属性通常是搭配 datalist 元素来实现的。
+			强强联手的结果就是实现一个数据列表，可以为用户提供一批选项。
+		-->
+	    <label>邮箱：<input type="email" name="email" pattern="\w[-\w.+]*@(163.com|126.com)" placeholder="仅限163和126邮箱" required></label>
+	    <br><br>
+	    <label>电话：<input type="tel" name="tel" pattern="(\(\d{3,4}\)|\d{3,4}-|\s)?\d{8}" placeholder="仅限座机号码" required></label>
+	    <br><br>
+	    <label>网址：<input type="url" name="url" pattern="^((https|http)?:\/\/)[^\s]+" placeholder="仅限以http和https开头的网址" required size="30" list="urllist"></label>
+	    <br><br>
+	    <input type="submit" value="提交">
+	</form>
+	
+	<datalist id="urllist">
+	    <option value="https://ilovefishc.com">鱼C主页</option>
+	    <option value="https://fishc.com.cn">鱼C论坛</option>
+	    <option value="https://fishc.taobao.com">支持小甲鱼</option>
+	</datalist>
+	
+</body>
+</html>
