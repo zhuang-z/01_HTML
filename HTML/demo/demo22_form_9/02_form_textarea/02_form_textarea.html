@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>textarea元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="get">
+		<!-- textarea接收多行文本输入，rows和cols定义行数和列数，单位是字符
+		 注意：这里的单位是按英文字符来算的，由于中文字符通常长得比较胖，
+		 所以 1 个中文字符相当于 2 个英文字符的宽度来计算
+		 
+		 textarea不支持自适应高度，文字超出的部分会自动变成滚动条，或者使用rows和cols设定行高和列
+		 -->
+		<textarea name="sayhi" rows="10" cols="30">哈哈嗨，赶紧自己多学点，然后攒钱去疯咯。勇敢和疯狂的人先享受世界。</textarea>
+		<br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>

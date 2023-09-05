@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>output元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- output 元素的作用就是将计算结果输出，仅此而已 -->
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" action="welcome.php" method="get">
+		0<input type="range" id="a" value="50" min="0" max="100">100 +
+		<input type="number" id="b" value="50">=
+		<!-- 使用output显示结果 -->
+		<output name="x" for="a b">100</output>
+	</form>
+	
+</body>
+</html>

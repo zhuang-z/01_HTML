@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="鱼C工作室|免费编程视频教学|Python教学|Web开发教学|全栈开发教学|C语言教学|汇编教学|Win32开发|加密与解密|Linux教学">
+    <meta name="description" content="鱼C工作室为大家提供最有趣的编程视频教学。">
+    <meta name="author" content="鱼C工作室">
+    <title>鱼C-动态计算文本输入框</title>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/textSum.min.js"></script>
+    <link rel="stylesheet" href="css/fishc.css">
+</head>
+<body>
+    <br>
+    <div style="margin:50px auto; width:60%;">
+        <p><span>input 最大长度为10</span></p>
+        <div class="textWrap wordSumTotal">
+            <!-- 请在此处补充一个 input 元素，并将其最大长度限制为 10 个字符 -->
+			<input type="text" name="text1" maxlength="10">
+        </div>
+        <p><span>input 最大长度为20</span></p>
+        <div class="textWrap wordSumTotal">
+            <!-- 请在此处补充一个 input 元素，并将其最大长度限制为 20 个字符 -->
+			<input type="text" name="text2" maxlength="20" style="height:46px">
+        </div>
+        <p><span>textarea 最大长度为200</span></p>
+        <div class="textWrap wordSumTotal">
+            <!-- 请在此处补充一个 textarea 元素，并将其最大长度限制为 200 个字符 -->
+			<textarea name="textarea" cols="200" maxlength="200"></textarea>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('.wordSumTotal').textSum();
+        });
+    </script>
+</body>
+</html>

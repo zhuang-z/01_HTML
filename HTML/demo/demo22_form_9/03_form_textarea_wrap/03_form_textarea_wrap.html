@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>textarea warp属性自动换行的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<form action="welcome.php" method="get">
+		<!-- 文本自动换行 
+		wrap属性 off 文本不自动换行
+		         soft 文本自动换行，但是换行符不提交
+				 hard 文本自动换行，但换行符也要提交，必须设定cols的值
+		-->
+		<textarea name="sayhi" rows="10" cols="30" wrap="off">哈哈嗨，人生是旷野不是轨道，多去体验，多去见识！遇见不同的人，遇见不同的事，多丰富自己的人生！</textarea>
+		<br>
+		<button type="submit">提交</button>
+	</form>
+	
+</body>
+</html>
