@@ -8,14 +8,26 @@
 	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
 	<meta name="author" content="xiaoyouzi">
 	
+	<!-- 
+		header —— 定义简介形式的内容
+		nav —— 定义页面主导航功能
+		main —— 定义主内容，主内容中可以有各种子内容区段（比如 article、section、div 等）
+		article —— 定义独立的文章内容，与页面其它部分无关（比如一篇博文）
+		section —— 定义文档中的节，与 article 类似，但 section 更适用于组织页面使其按功能分块
+		aside —— 定义侧边栏（术语条目、作者简介、相关链接等）
+		footer —— 定义页脚部分的内容
+		details —— 定义额外的细节
+		summary —— 定义 details 元素的标题
+	 -->
+	
 	<style>
-		.header{
+		header{
 			background-color: #429296;
 			color:white;
 			text-align:center;
 			padding:5px;
 		}
-		.aside{
+		aside{
 			line-height:30px;
 			background-color: #eeeeee;
 			height:300px;
@@ -27,15 +39,15 @@
 				注释：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。*/
 			padding:15px;
 		}
-		.section{
+		section{
 			width:600px;
 			float:left;
 			padding:10px;
 		}
-		.footer{
+		footer{
 			background-color:#429296;
 			color:white;
-			clear:both;
+			clear:both;  /* 清除浮动*/
 			text-align:center;
 			padding:5px;
 		}
@@ -43,27 +55,27 @@
 	</style>
 </head>
 <body>
-	<!-- 旧时代div语义 定义class类，然后对class类进行修饰-->
-	<div class="header">
+	<!-- 新时代直接用新的语义元素定义网页的不同部分 -->
+	<header>    <!-- 老:<div class="header"> -->
 		<h1>《零基础入门学习Web开发》（HTML5 & CSS3）</h1>
-	</div>
+	</header>
 	
-	<div class="aside">
+	<aside>		<!-- 老：<div class="aside"> -->
 		<p><a href="https://www.bilibili.com/video/av21786264/" target="_blank">在线学习</a></p>
 		<p><a href="https://fishc.com.cn/forum.php?mod=forumdisplay&fid=354&filter=typeid&typeid=730">课后作业</a></p>
 		<p><a href="https://ilovefishc.com/html5/" target="_blank">课件案例</a><br></p>
 		<p><a href="https://fishc.taobao.com/" target="_blank">资源打包</a></p>
-	</div>
+	</aside>
 	
-	<div class="section">
+	<section>	<!-- 老：<div class="section"> -->
 		<h2>Web开发是什么</h2>
 		<p>很多同学可能还不明白，Web开发是什么？</p>
 		<p>Web开发是一个指代网页或网站编写过程的广义术语。网页使用HTML、CSS和JavaScript编写。这些页面可能是类似于文档的简单文本和图形。页面也可以是交互式的，或显示变化的信息。编写交互式服务器页面略微复杂一些，但却可以实现更丰富的网站。如今的大多数页面都是交互式的，并提供了购物车、动态可视化甚至复杂的社交网络等现代在线服务。</p>
-	</div>
+	</section>
 	
-	<div class="footer">
+	<footer>	<!-- 老：<div class="footer"> -->
 		Copyright © 鱼C工作室
-	</div>
+	</footer>
 	
 </body>
 </html>
