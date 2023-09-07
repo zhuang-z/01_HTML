@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>picture元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- 当浏览器分辨率大于 1024 像素的时候，显示的图像是 big.jpg；
+		当浏览器分辨率小于 1024 像素但大于 512 像素的时候，显示的图像是 small.jpg；
+		当浏览器分辨率小于 512 像素或者不支持 picture 元素的时候，显示的 normal.jpg。
+		<picture> 元素包含两个标签：一个或多个 <source> 标签和一个 <img> 标签。
+	-->
+	<picture>
+		<source media="(min-width:512px)" srcset="big.jpg">
+		<source media="(min-width:256px)" srcset="small.jpg">
+		<img src="normal.jpg" alt="xiaojiejie" style="width:auto;">
+	</picture>
+	
+</body>
+</html>

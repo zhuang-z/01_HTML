@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>博客页面布局分析 | 鱼C工作室</title>
+    <link rel="stylesheet" href="./css/pure.css">
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <aside class="pure-u-1 pure-u-md-1-4"> <!-- div换成aside-->
+            <header class="header">
+                <h1 class="brand-title">博客布局分析</h1>
+                <h2 class="brand-tagline">I love FishC</h2>
+                <nav> <!-- div换成nav-->
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="https://fishc.com.cn">FishC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </aside>
+
+        <section class="content pure-u-1 pure-u-md-3-4">  <!-- div换成section-->
+            <div>
+                <div class="posts">
+                    <h1 class="content-subhead">第一篇推文</h1>
+                    <div>
+                        <header class="post-header">   <!-- div换成header-->
+                            <h2 class="post-title">第一篇推文的标题</h2>
+                            <p class="post-meta">
+                                By 作者 <a class="post-category post-category-design" href="#">Web</a> <a class="post-category post-category-pure" href="#">CSS</a>
+                            </p>
+                        </header>
+
+                        <article>  <!-- div换成article-->
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, rem cumque. Vero amet fuga, officia a voluptatibus molestiae, voluptates doloremque voluptatem, quidem eveniet esse officiis sint commodi! Aliquid, eveniet doloremque?
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <h1 class="content-subhead">第二篇推文</h1>
+                    <div>
+                        <header>  <!-- div换成header-->
+                            <h2 class="post-title">第二篇推文的标题</h2>
+                            <p class="post-meta">
+                                By 作者 <a class="post-category post-category-js" href="#">JavaScript</a>
+                            </p>
+                        </header>
+
+                        <article>  <!-- div换成article-->
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi esse explicabo atque dolorem exercitationem earum, a cumque corrupti necessitatibus dignissimos minima neque qui tempora repellendus et officiis iusto, voluptates mollitia.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div>
+                        <header>  <!-- div换成header-->
+                            <h2 class="post-title">图册</h2>
+                            <p class="post-meta">
+                                By 作者 <a class="post-category" href="#">Uncategorized</a>
+                            </p>
+                        </header>
+
+                        <div>
+                            <div class="post-images pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of someone working poolside at a resort" class="pure-img-responsive" src="./img/1.jpg">
+                                    <div class="post-image-meta">
+                                        <h3>熊熊 Photos</h3>
+                                    </div>
+                                </div>
+
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach" class="pure-img-responsive" src="./img/2.jpg">
+                                    <div class="post-image-meta">
+                                        <h3>飞鸟 Photos</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="content-subhead">第三篇推文</h1>
+                    <div>
+                        <header>   <!-- div换成header-->
+                            <h2 class="post-title">第三篇推文的标题</h2>
+                            <p class="post-meta">
+                                By 作者 <a class="post-category post-category-yui" href="#">Python</a>
+                            </p>
+                        </header>
+
+                        <article>  <!-- div换成article-->
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel alias aliquam vero quam amet! Provident quo illum culpa, perspiciatis voluptas omnis nam? Quasi sint molestiae sit. Consectetur minima unde alias.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <footer class="pure-menu pure-menu-horizontal">  <!-- div换成footer-->
+                        <ul>
+                            <li class="pure-menu-item"><a href="https://ilovefishc.com" class="pure-menu-link">主页</a></li>
+                            <li class="pure-menu-item"><a href="https://fishc.com.cn" class="pure-menu-link">论坛</a></li>
+                            <li class="pure-menu-item"><a href="https://man.ilovefishc.com" class="pure-menu-link">宝典</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

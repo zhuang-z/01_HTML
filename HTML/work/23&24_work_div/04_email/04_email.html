@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive email layout.">
+    <title>邮箱页面布局分析 | 鱼C工作室</title>
+    <link rel="stylesheet" href="./css/pure.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="layout" class="content pure-g">
+        <nav class="pure-u">
+            <a href="#" id="menuLink" class="nav-menu-button">菜单</a>
+            <div class="nav-inner">
+                <button class="primary-button pure-button">写信</button>
+                <div class="pure-menu">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">收件箱 <span class="email-count">(2)</span></a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">重要</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">已发送</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">草稿箱</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">垃圾箱</a></li>
+                        <li class="pure-menu-heading">标签</li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-personal"></span>私人</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-work"></span>工作</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><span class="email-label-travel"></span>旅游</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <aside class="pure-u-1">
+            <div class="email-item email-item-selected pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="龟仙人头像" class="email-avatar" src="./img/1.jpg">
+                </div>
+                <div class="pure-u-3-4">
+                    <h5 class="email-name">龟仙人</h5>
+                    <h4 class="email-subject">催更</h4>
+                    <p class="email-desc">
+                        嘿，小甲鱼！我正在看你的《零基础入门学习Web开发》，赶快更新丫~
+                    </p>
+                </div>
+            </div>
+
+            <div class="email-item email-item-unread pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="黑寡妇头像" class="email-avatar" src="./img/2.jpg">
+                </div>
+                <div class="pure-u-3-4">
+                    <h5 class="email-name">黑寡妇</h5>
+                    <h4 class="email-subject">Re: 好久不见</h4>
+                    <p class="email-desc">
+                        这届奥斯卡颁奖晚会你确定不陪我去吗？！！
+                    </p>
+                </div>
+            </div>
+
+            <div class="email-item email-item-unread pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="YUI&#x27;s avatar" class="email-avatar" src="./img/3.jpg">
+                </div>
+                <div class="pure-u-3-4">
+                    <h5 class="email-name">罗伯特唐尼</h5>
+                    <h4 class="email-subject">嘿，哥们</h4>
+                    <p class="email-desc">
+                        我有一个项目，不知道你感不感兴趣？
+                    </p>
+                </div>
+            </div>
+
+            <div class="email-item pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="奥特曼头像" class="email-avatar" src="./img/4.jpg">
+                </div>
+                <div class="pure-u-3-4">
+                    <h5 class="email-name">迪迦</h5>
+                    <h4 class="email-subject">Re: 奥特曼家族邀请函</h4>
+                    <p class="email-desc">
+                        朋友，你相信光吗？
+                    </p>
+                </div>
+            </div>
+
+            <div class="email-item pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="葫芦娃七兄弟头像" class="email-avatar" src="./img/5.jpg">
+                </div>
+                <div class="pure-u-3-4">
+                    <h5 class="email-name">葫芦娃七兄弟</h5>
+                    <h4 class="email-subject">求助</h4>
+                    <p class="email-desc">
+                        小甲鱼，爷爷把蛇精给吃了，怎么办？
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="pure-u-1">
+            <div class="email-content">
+                <header class="email-content-header pure-g">
+                    <div class="pure-u-1-2">
+                        <h1 class="email-content-title">催更</h1>
+                        <p class="email-content-subtitle">
+                            From <a>龟仙人</a> at <span>3:56pm, April 3, 2021</span>
+                        </p>
+                    </div>
+                    <div class="email-content-controls pure-u-1-2">
+                        <button class="secondary-button pure-button">回复</button>
+                        <button class="secondary-button pure-button">转发</button>
+                        <button class="secondary-button pure-button">移动到...</button>
+                    </div>
+                </header>
+
+                <article class="email-content-body">
+                    <p>
+                        嘿，小甲鱼！
+                    </p>
+                    <p>
+                        我正在看你的《零基础入门学习Web开发》，赶快更新丫~
+                    </p>
+                    <p>
+                        我编不出来了，下面用 “乱数假文” 凑字数哈^o^
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente, explicabo voluptatem ex earum natus culpa a sequi animi aperiam nihil reiciendis quidem ad quibusdam ipsam cupiditate eum nemo inventore.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum praesentium sapiente ea quas ducimus nisi, facere, est labore laudantium obcaecati, assumenda deleniti maxime animi non tempora architecto voluptatum ipsam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, repellendus debitis? Dicta odit dolore nostrum voluptates pariatur vel et fugit maiores accusantium sapiente? Suscipit amet rerum eligendi ullam in similique!
+                    </p>
+                    <p>
+                        你最爱的，<br>
+                        龟仙人
+                    </p>
+                </article>
+            </div>
+        </main>
+    </div>
+    <!-- Script to make the Menu link work -->
+    <!-- Just stripped down version of the js/ui.js script for the side-menu layout -->
+    <script>
+        function getElements() {
+            return {
+                menu: document.getElementById('nav'),
+                menuLink: document.getElementById('menuLink')
+            };
+        }
+
+        function toggleClass(element, className) {
+            var classes = element.className.split(/\s+/);
+            var length = classes.length;
+            var i = 0;
+
+            for (; i < length; i++) {
+                if (classes[i] === className) {
+                    classes.splice(i, 1);
+                    break;
+                }
+            }
+            // The className is not found
+            if (length === classes.length) {
+                classes.push(className);
+            }
+
+            element.className = classes.join(' ');
+        }
+
+        function toggleMenu() {
+            var active = 'active';
+            var elements = getElements();
+
+            toggleClass(elements.menu, active);
+        }
+
+        function handleEvent(e) {
+            var elements = getElements();
+
+            if (e.target.id === elements.menuLink.id) {
+                toggleMenu();
+                e.preventDefault();
+            } else if (elements.menu.className.indexOf('active') !== -1) {
+                toggleMenu();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('click', handleEvent);
+        });
+    </script>
+</body>
+</html>

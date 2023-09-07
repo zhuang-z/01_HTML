@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>map元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- map 元素就是在图片上建立映射的意思。该元素有一个 name 属性，即指定图像映射的名称，
+	然后给 img 元素的 usemap 属性填入对应的名称，这样就建立了映射的关系。
+
+	但光有映射还不够，咱还需要确定映射的具体位置，
+	那就需要使用到 area 元素了。area 元素用于定义图像映射中的区域以及对应跳转的 URL。 -->
+	<img src="pic.jpg" alt="图片" usemap="#book"/>
+	
+	<map name="book">
+		<!-- circle需要提供圆心的坐标以及圆的半径 圆形：shape="circle"，coords="x,y,z" -->
+		<area shape="circle" coords="784,241,10" alt="cup of coffee" href="https://fishc.com.cn" target="_blank" >
+		<!-- poly需要提供多边形每个点的坐标 多边形：shape="polygon"，coords="x1,y1,x2,y2,x3,y3,..."-->
+		<area shape="poly" coords="279,230 867,549, 636,957, 46,655" alt="book" href="https://item.jd.com/12573534.html" target="_blank">
+		<!-- rect需要提供矩形左上角和右下角的坐标 矩形：shape="rectangle"，coords="x1,y1,x2,y2"-->
+		<area shape="rect" coords="710,818,886,1008" alt="turtle" href="https://man.ilovefishc.com" target="_blank">
+	</map>
+	
+</body>
+</html>
