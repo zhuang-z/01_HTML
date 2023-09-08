@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>video元素的使用</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="description" content="xiaoyouzi HTML+CSS+JavaScript">
+	<meta name="author" content="xiaoyouzi">
+</head>
+<body>
+	<!-- 在网页中设置宽高嵌入视频 但无法播放，只是一个静态图片 -->
+	<video width="640" height="352" src="test_video.mp4">
+		非常抱歉，本视频由于不可抗拒因素，导致无法播放……
+	</video>
+	
+	<!-- 需要给它增加一个播放控件，或者让网页载入后就自动开始播放视频。
+	前者我们使用的是一个叫做 controls 的属性，
+	后者使用 autoplay 属性，它们都不需要属性值，直接将关键字填进去就可以了
+	 muted 属性，这个同样不需要属性值，因为它表示静音
+	 -->
+	<video width="640" height="352" src="test_video.mp4" controls autoplay muted>
+		增加播放控件或者自动播放后视频能正常播放
+	</video>
+	<!-- 虽然这里加入了 autoplay 属性，理论上来说，网页载入后视频就应该开始播放了，但是有些浏览器偏偏有自己的想法，它不这么做……
+	比如咱现在演示的 Chrome 浏览器它就是这样的！
+	所以，我们才需要人工点击开始按钮…… -->
+
+	<!-- preload属性
+		auto：要求浏览器尽快加载整个视频，默认行为
+		metadata：只加载视频的元数据（宽度、高度、第一帧影像和视频总长度等）
+		none：在用户点击开始播放之前不会加载视频
+	-->
+	
+	<video width="640" height="352" src="test_video.mp4" controls preload="metadata">
+		增加播放控件或者自动播放后视频能正常播放
+	</video>
+	
+	<!-- poster属性设置封面 loop循环播放-->
+	<video width="640" height="352" src="test_video.mp4" poster="pic.jpg" controls loop>
+		增加播放控件或者自动播放后视频能正常播放
+	</video>
+	
+</body>
+</html>

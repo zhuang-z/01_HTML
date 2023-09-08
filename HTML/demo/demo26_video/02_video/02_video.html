@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="鱼C工作室|免费编程视频教学|Python教学|Web开发教学|全栈开发教学|C语言教学|汇编教学|Win32开发|加密与解密|Linux教学">
+    <meta name="description" content="鱼C工作室为大家提供最有趣的编程视频教学。">
+    <meta name="author" content="鱼C工作室">
+    <title>循环播放视频</title>
+</head>
+<body>
+	<!-- 让视频循环播放 -->
+	<video id="FishC" src="http://fishc.oss-cn-hangzhou.aliyuncs.com/Web/video_tag.mp4" width="640" controls loops>
+		非常抱歉，本视频由于不可抗拒因素，导致无法播放……
+	</video>
+
+	<p>鱼油选择播放速率：<select id="selRate">
+		<option value="0.5">0.5</option>
+		<option value="1" selected>1.0</option>
+		<option value="1.25">1.25</option>
+		<option value="1.5">1.5</option>
+		<option value="2">2.0</option>
+	</select></p>
+
+	<button onclick="playPause()">播放/暂停</button> 
+	<button onclick="makeBig()">放大</button>
+	<button onclick="makeSmall()">缩小</button>
+	<button onclick="makeNormal()">正常</button>
+
+	<script>
+		var rate = document.getElementById('selRate');
+		var video = document.getElementById('FishC');
+
+		// 开始/暂停播放
+		function playPause() { 
+		  if (video.paused) 
+			video.play(); 
+		  else 
+			video.pause(); 
+		} 
+		// 放大
+		function makeBig() { 
+			video.width = 960; 
+		} 
+		// 缩小
+		function makeSmall() { 
+			video.width = 320; 
+		} 
+		// 正常
+		function makeNormal() { 
+			video.width = 640; 
+		}
+		
+		// 改变播放速率
+		rate.addEventListener('change', function () {
+			video.playbackRate = this.value;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="鱼C工作室|免费编程视频教学|Python教学|Web开发教学|全栈开发教学|C语言教学|汇编教学|Win32开发|加密与解密|Linux教学">
+    <meta name="description" content="鱼C工作室为大家提供最有趣的编程视频教学。">
+    <meta name="author" content="鱼C工作室">
+    <title>鱼C-破碎的视频播放</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        h3 {
+            text-align: center;
+            padding-top: 30px;
+            color: black;
+        }
+    </style>
+	<script src="js/jquery.js"></script>
+</head>
+
+<body onload="init()" style="margin: 0px;">
+    <h3>点击 -> 开启爆炸效果</h3>
+    <div style="display: none;">
+		<!-- video ID为fishc.js里的video = document.getElementById('sourceid'); -->
+		<video id="sourceid" src="./test_video.mp4" autoplay loop></video>
+        <canvas id="sourcecopy" width="680" height="400"></canvas>
+    </div>
+
+    <div>
+        <center>
+            <canvas id="output" width="1000" height="500" onclick="dropBomb(event, this)" style="border: 0 none"></canvas>
+        </center>
+    </div>
+
+    <script src="js/fishc.js"></script>
+    <script>
+        window.addEventListener('click', function (e) {
+            if (location.href.indexOf("#reloaded") == -1) {
+                location.href = location.href + "#reloaded";
+                location.reload();
+            }
+        })
+    </script>
+</body>
+</html>
