@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>iframe元素嵌入网页</title>
+	</head>
+	<body>
+		<!-- 使用iframe元素 使一个网页嵌入到自己的网页中 
+			sandbox属性  为了安全，可以给网页添加一系列的限制
+			如果被规定为空字符串（sandbox=""），sandbox 属性将会启用一系列对行内框架中内容的额外限制。
+			""					应用以下所有的限制。
+			allow-same-origin	允许 iframe 内容被视为与包含文档有相同的来源。
+			allow-top-navigation	允许 iframe 内容从包含文档导航（加载）内容。
+			allow-forms			允许表单提交。
+			allow-scripts		允许脚本执行。
+			allow-popups        允许弹出窗口
+		-->
+		<iframe src="https://fishc.com.cn/" width="500px" height="500px" sandbox="allow-popups">
+			抱歉，您的浏览器不支持iframe……
+		</iframe>
+	</body>
+</html>
